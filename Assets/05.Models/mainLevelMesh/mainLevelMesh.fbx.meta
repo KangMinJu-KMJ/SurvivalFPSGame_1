@@ -1,0 +1,241 @@
+fileFormatVersion: 2
+guid: 3eb28462f21922d478249e50420f8dcd
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: doorMesh
+    100002: frontEndMesh
+    100004: frontRoomMesh
+    100006: innerHallWayMesh
+    100008: lightFixturesMesh
+    100010: loadingDockMesh
+    100012: //RootNode
+    100014: observatory
+    100016: roofTileMesh
+    400000: doorMesh
+    400002: frontEndMesh
+    400004: frontRoomMesh
+    400006: innerHallWayMesh
+    400008: lightFixturesMesh
+    400010: loadingDockMesh
+    400012: //RootNode
+    400014: observatory
+    400016: roofTileMesh
+    2300000: doorMesh
+    2300002: frontEndMesh
+    2300004: frontRoomMesh
+    2300006: innerHallWayMesh
+    2300008: lightFixturesMesh
+    2300010: loadingDockMesh
+    2300012: observatory
+    2300014: roofTileMesh
+    3300000: doorMesh
+    3300002: frontEndMesh
+    3300004: frontRoomMesh
+    3300006: innerHallWayMesh
+    3300008: lightFixturesMesh
+    3300010: loadingDockMesh
+    3300012: observatory
+    3300014: roofTileMesh
+    4300000: roofTileMesh
+    4300002: lightFixturesMesh
+    4300004: loadingDockMesh
+    4300006: frontEndMesh
+    4300008: doorMesh
+    4300010: innerHallWayMesh
+    4300012: frontRoomMesh
+    4300014: observatory
+    6400000: doorMesh
+    6400002: frontEndMesh
+    6400004: frontRoomMesh
+    6400006: innerHallWayMesh
+    6400008: lightFixturesMesh
+    6400010: loadingDockMesh
+    6400012: observatory
+    6400014: roofTileMesh
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: alpha
+    second: {fileID: 2100000, guid: 2946db17b7bef8a45a3e54627f6fabef, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: container_container
+    second: {fileID: 2100000, guid: 758818eec91dc754f92ed1b190ec55d3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: diffuse
+    second: {fileID: 2100000, guid: 17799a3e64076ff42a1d8e9a98f22eb3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: doorFrame
+    second: {fileID: 2100000, guid: fd08984fabba7f44cbcfefca89498f92, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: doorFrameBig
+    second: {fileID: 2100000, guid: a71b140cbe09abe438e84b53994b0b76, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: doorLayered
+    second: {fileID: 2100000, guid: 0bd400efb95ab204b83ba6b068a8bcda, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: frontRoomLayered
+    second: {fileID: 2100000, guid: 17799a3e64076ff42a1d8e9a98f22eb3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: illuminated
+    second: {fileID: 2100000, guid: a2f8d8e60af301d429d1c02afd2a822c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: innerHallwayLayered
+    second: {fileID: 2100000, guid: a2f8d8e60af301d429d1c02afd2a822c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: kitchenetteLayered
+    second: {fileID: 2100000, guid: 2726b1b696b87f2469e64b5a0f3a2350, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lightPost
+    second: {fileID: 2100000, guid: 1a156390be2b1fe40916c7e9d9e1d4ce, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: loadingDockLayered
+    second: {fileID: 2100000, guid: 17799a3e64076ff42a1d8e9a98f22eb3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: loadingDoor
+    second: {fileID: 2100000, guid: ac860053fdd948640a2f1ac9e8c2da60, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: observatoryLayeredFix
+    second: {fileID: 2100000, guid: 0f35225b38794b046ab213c5b3fcb62b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: officeChairSheet
+    second: {fileID: 2100000, guid: 7185fa1d64490b14cb2b4cde8293e8e3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: outerWallOne
+    second: {fileID: 2100000, guid: 0e702bf892836e045b571eb2dbfa0e21, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: passengerCockPit
+    second: {fileID: 2100000, guid: 90954d00d5abdf240b0f4cda874eb2cf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: passengerShipSheet
+    second: {fileID: 2100000, guid: b00e2a3bda537aa43896e045969d0cdc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: roofTilesLayered
+    second: {fileID: 2100000, guid: ffc11938de72e0c488c4236175a40aba, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: techRoom
+    second: {fileID: 2100000, guid: e8ed1377bb8431742b698ee717918322, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 105
+    meshCompression: 0
+    addColliders: 1
+    useSRGBMaterialColor: 1
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 4
+    normalCalculationMode: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

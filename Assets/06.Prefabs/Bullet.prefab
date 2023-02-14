@@ -13,7 +13,8 @@ GameObject:
   - component: {fileID: 5353697263662330366}
   - component: {fileID: 5353697263662330367}
   - component: {fileID: 5353697263662330360}
-  m_Layer: 0
+  - component: {fileID: 114827722081173264}
+  m_Layer: 11
   m_Name: Bullet
   m_TagString: BULLET
   m_Icon: {fileID: 0}
@@ -226,3 +227,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 400
   rbody: {fileID: 5353697263662330366}
+  damage: 20
+--- !u!114 &114827722081173264
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5353697263662330361}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 724374705534fa7408152aa26f9cf82f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitsound: {fileID: 8300000, guid: 6eef8b89e957ceb4b8c1d127670af980, type: 3}
+  effect: {fileID: 0}

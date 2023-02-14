@@ -32,24 +32,22 @@ public class FirePos : MonoBehaviour
 
     void Start()
     {
-        bulletprefab = GetComponent<GameObject>();
         fire_pos = GetComponent<Transform>();
-
-
+        firesound = Resources.Load<AudioClip>("gun");
     }
 
     void Update()
     {
-
         Debug.DrawRay(fire_pos.position, fire_pos.forward * 20.0f, Color.green);
 
         //마우스 왼쪽 버튼을 눌렀다면 1은 오른쪽버튼이다 2는 휠버튼
         if (Hands.isrun == false)
-        {
+        { 
             if (Input.GetMouseButtonDown(0) && !isReloading) //기본 발사
             {
                 if (Hands.isFire == true) //기본 발사가 가능하면
                 {
+                    Debug.Log("In Hands isFire true?");
                     --remainingbullet;
                     Fire();
 
@@ -75,10 +73,11 @@ public class FirePos : MonoBehaviour
     {
         RaycastHit hit;
 
-        if (Physics.Raycast(fire_pos.position, fire_pos.forward, out hit, 20.0f, 1 << 10))
+        if (Physics.Raycast(fire_pos.position, fire_pos.forward, out hit, 20.0f))
         {
             if (hit.collider.tag == "SKELETON")
             {
+                Debug.Log("in Skeleton Tag");
                 object[] _params = new object[2];
 
                 _params[0] = hit.point;
@@ -89,7 +88,7 @@ public class FirePos : MonoBehaviour
 
             if (hit.collider.tag == "WALL")
             {
-                object[] _params = new object[2];
+                object[] _params = new object[1];
                 _params[0] = hit.point;
                 hit.collider.gameObject.SendMessage("OnDamage", _params);
             }

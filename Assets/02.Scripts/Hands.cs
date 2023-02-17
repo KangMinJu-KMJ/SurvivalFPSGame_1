@@ -50,59 +50,38 @@ public class Hands : MonoBehaviour
 
     void WeaponChange()
     {
-        if (Input.GetKeyDown(KeyCode.Alpha1))
+        if (Input.GetKeyDown(KeyCode.Alpha1)) //키보드의 숫자패드 1을 눌렀을 시
         {
-            for (int i = 0; i < 3; i++)
+            for (int i = 0; i < 3; i++)//Ak47의 오브젝트를 활성화, M4A1을 비활성화 한다.
             {
                 Ak47[i].enabled = true;
                 M4A1[i].enabled = false;
             }
-
             spas12.enabled = false;
-           
             
-            ani.Play("draw");
-            ishavem4a1 = false;
-            isFire = true; //기본 발사 가능
+            ani.Play("draw");//애니메이션 재생
+            ishavem4a1 = false;//M4A1의 상태 변경
+            isFire = true; //기본 발사를 참으로 변경
             idx = 0;
-            weaponImage.sprite = weaponIcons[idx];
+            weaponImage.sprite = weaponIcons[idx]; //0번째 배열의 이미지 활성화
         }
 
-        else if (Input.GetKeyDown(KeyCode.Alpha2))
+        else if (Input.GetKeyDown(KeyCode.Alpha2)) //키보드의 숫자패드 2를 눌렀을 시
         {
-            for (int i = 0; i < 3; i++)
+            for (int i = 0; i < 3; i++)//마찬가지로 M4A1의 오브젝트 활성화, Ak47 비활성화
             {
                 Ak47[i].enabled = false;
                 M4A1[i].enabled = true;
             }
-
             spas12.enabled = false;
             
-           
-            ani.Play("draw");
-            ishavem4a1 = false;
-            isFire = false; //기본 발사 불가능
-        }
-
-        else if (Input.GetKeyDown(KeyCode.Alpha3))
-        {
-            for (int i = 0; i < 3; i++)
-            {
-                Ak47[i].enabled = false;
-                M4A1[i].enabled = false;
-            }
-
-            spas12.enabled = true;
-
-            ani.Play("draw");
-            ishavem4a1 = true;
-            isFire = true; //기본 발사 가능
-            idx = 1;
+            ani.Play("draw");//애니메이션 재생
+            ishavem4a1 = true;//M4A1의 상태 변경
+            isFire = true; //기본 발사를 거짓으로 변경
+            idx = 0;
             weaponImage.sprite = weaponIcons[idx];
         }
 
-
-        
     }
 
    

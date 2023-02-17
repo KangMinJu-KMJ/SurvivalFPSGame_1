@@ -40,33 +40,24 @@ public class FirePos : MonoBehaviour
     {
         Debug.DrawRay(fire_pos.position, fire_pos.forward * 20.0f, Color.green);
 
-        //마우스 왼쪽 버튼을 눌렀다면 1은 오른쪽버튼이다 2는 휠버튼
         if (Hands.isrun == false)
         { 
-            if (Input.GetMouseButtonDown(0) && !isReloading) //기본 발사
+            if (Input.GetMouseButtonDown(0) && !isReloading)
             {
-                if (Hands.isFire == true) //기본 발사가 가능하면
+                if (Hands.isFire == true) //기본발사 => 가능
                 {
-                    Debug.Log("In Hands isFire true?");
                     --remainingbullet;
                     Fire();
 
-                    if (Hands.ishavem4a1 == true)
-                    {
+                    if (Hands.ishavem4a1 == true)//m4a1를 든 상태일 시
                         StartCoroutine(FastShotFire());
-                    }
 
                     if (remainingbullet == 0) //총알이 떨어지면 재장전
-                    {
                         StartCoroutine(Reloading());
-                    }
 
                 }
             }
-
         }
-
-
     }
 
     void Fire()
@@ -121,8 +112,6 @@ public class FirePos : MonoBehaviour
         yield return new WaitForSeconds(0.25f);
         Fire();
         yield return new WaitForSeconds(0.25f);
-        Fire();
-
     }
 
 
@@ -137,7 +126,7 @@ public class FirePos : MonoBehaviour
 
         ani.Play("reloadStop");
         yield return new WaitForSeconds(1.0f);
-        isReloading = false;
+        isReloading = false; //리로드의 상태 변경과 총알의 UI, 갯수를 다시 채움.
         magazineImg.fillAmount = 1f;
         remainingbullet = maxbullet;
         UpdateBulletTxt(); //남은 총알수 갱신

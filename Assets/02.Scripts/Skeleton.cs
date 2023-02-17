@@ -84,17 +84,11 @@ public class Skeleton : MonoBehaviour
 
             float dist = Vector3.Distance(player_Tr.position, skel_Tr.position);
             if(dist<=attackdist)
-            {
                 MonsterState = SkeletonState.attack;
-            }
             else if(dist<=tracedist)
-            {
                 MonsterState = SkeletonState.trace;
-            }
             else
-            {
                 MonsterState = SkeletonState.idle;
-            }
         }
     }
 
